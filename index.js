@@ -1,8 +1,17 @@
-const express = require('express');
+const express = require("express");
+const path = require("path");
+const { route } = require("./routes/routes");
+const routes = require("./routes/routes");
+const routes = require("./routes/routes");
+
 const app = express();
+const port = 3000;
 
-app.get('/home', function (req, res) {
-  res.send('Hello World');
-});
+app.set("view engine", "ejs");
+app.use(express.static(path.join(__dirname, "public")));
+app.use(routes);
 
-app.listen(3000);
+
+app.listen(port, () =>
+  console.log(`Servidor rodando em http://localhost:${port}`)
+);
