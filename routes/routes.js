@@ -9,5 +9,3 @@ routes.get("/deleteOne/:id", TaskController.deleteOneTask);
 routes.get("/check/:id", TaskController.taskCheck);
 
 module.exports = routes;
-
-
