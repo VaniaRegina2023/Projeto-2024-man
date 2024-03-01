@@ -1,7 +1,7 @@
 {
   "name": "projeto-2024",
   "version": "1.0.0",
-  "description": "to do list",
+  "description": "Gerenciador de Tarefas",
   "main": "index.js",
   "scripts": {
     "start": "node index",
